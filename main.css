@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+
+#headPic {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+body {
+	background-color: #ecf0f1;
+}
+
+#article {
+	margin-top:25px;
+	margin-bottom:25px;
+	margin-right:250px;
+	margin-left:250px;
+	width:auto;
+}
+
+#topHead h1 {
+	font:Georgia, "Times New Roman", Times, serif;
+	font-size:48px;
+	text-align:center;
+}
+
+#subHead h2 {
+	font:Georgia, "Times New Roman", Times, serif;
+	font-size:36px;
+	text-align:center;
+}
+
+#content p {
+	font:Georgia, "Times New Roman", Times, serif;
+	font-size:24px;
+}
+
+#content li {
+	font:Georgia, "Times New Roman", Times, serif;
+	font-size:24px;
+}
+
+footer {
+	width:100%;
+	margin-top:150px;
+	text-align:center;
+	font:"Courier New", Courier, monospace
+	font-size:11px;
+	font-stretch:condensed;
+}

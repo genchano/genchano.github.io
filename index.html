@@ -1,29 +1,86 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-"http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>Login</title>
-    </head>
-    <body>
-    	
-    	<h1>Mark Genchanok</h1>
-        <img src="me.JPG">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Amazon Cloud Computing</title>
 
-<form action="image.html" method="post" id="loginForm">
-	<fieldset>
-        <legend>Login</legend>
-		<div><label for="email">Email Address</label>
-			<input type="email" name="email"
-			id="email" required></div>
-		<div><label for="password">Password</label>
-			<input type="password" name="password"
-			id="password" required></div>
-		<div><label for="submit"></label><input type="submit"
-			value="Login &rarr;" id="submit"></div>
-	</fieldset>
-</form>
-<script src="js/login.js"></script>
+<link href="main.css" rel="stylesheet" type="text/css">
+<img src="EC2.png" id="headPic" />
+</head>
+
+<body>
+
+	<div id="article">
+		<div id="topHead">
+        	<h1>Under the Hood of Amazon Cloud Computing</h1>
+        </div>
         
-    </body>
+        <div id="content">
+        	<p>Amazon Elastic compute cloud or EC2 is a key part of Amazon.com’s cloud computing platform and Amazon Web Services. EC2 allows users to rent virtual computers on which to run their own computer applications. After analyzing the EC2 infrastructure, it was found to have 454,400 servers.</p>
+        </div>
+        
+        <div id="subHead">
+        	<h2>Cloud Servers</h2>
+        </div>
+        
+        <div id="content">
+        	<p>EC2 allows scalable deployment of applications through which a user can create a virtual machine, which Amazon calls an “instance”. A user can create, launch, and terminate server instances as needed, paying by the hour for active servers. This is why it has been coined the name “elastic”.</p>
+        </div>
+        
+        <div id="subHead">
+        	<h2>Elastic Compute Units and Block Storage</h2>
+        </div>
+        
+        <div id="content">
+        	<p>Elastic compute unit (ECU) provides the equivalent CPU capacity of a 1.0-1.2 GHz 2007 Opteron or 2007 Xeon processor. The elastic block store (EBS) provides raw block devices for EC2 instances. EBS volumes can be up to 1 terabyte in size. They are built on replicated storage so that the failure of a single component will not cause data loss.</p>
+        </div>
+        
+        <div id="subHead">
+        	<h2>Server Types</h2>
+        </div>
+        
+        <div id="content">
+        	<p>EC2 utilizes Xen virtualization where each “instance” functions as a virtual private server. As of December 2012, the following instance types were offered:</p>
+            <div id="bullet">
+            	<ul>
+                	<li>On-demand: pay by the hour without commitment</li>
+                    <li>Reserved: rent instances with one-time payment</li>
+                    <li>Spot: bid-based service</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div id="subHead">
+        	<h2>Operating System</h2>
+        </div>
+        
+        <div id="content">
+        	<p>The EC2 service offered Linux and later Sun Microsystems’ OpenSolaris and Solaris Express Community Edition. It also added Windows Server 2003 and Windows Server 2008 operating systems to the list. Amazon also added their own Linux distribution based on the Fedora and Red Hat Linux. This included: </p>
+            <div id="bullet">
+            	<ul>
+                	<li>Linux Kernel</li>
+                    <li>Java OpenJDK Runtime Environment</li>
+                    <li>GNU Compiler Collection</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div id="subHead">
+        	<h2>Storage</h2>
+        </div>
+        
+        <div id="content">
+        	<p>EBS volumes provide persistent storage independent of the lifetime of the EC2 instance and act much like hard drives on a real server. The OS is free to use the device however it wants. Users can set up and manage storage volumes of sizes from 1 GB to 1 TB. Amazon's elastic IP address feature is similar to static IP address in traditial data centers. There is one key difference however. A user can programmatically map an elastic IP to any virtual machine instance without a network administrator's help and without having to wait for DNS to propagate the new binding.</p>
+        </div>
+	</div>
+
+</body>
+
+<footer>
+	<p>Copyright by Mark Genchanok<p>
+    <p>Last updated February 24, 2015</p>
+    <p>Sources used include: </p>
+    <a href="http://en.wikipedia.org/wiki/Amazon_Elastic_Compute_Cloud">Wikipedia</a>
+    <a href="http://www.zdnet.com/article/amazon-ec2-cloud-is-made-up-of-almost-half-a-million-linux-servers/">Amazon Cloud</a>
+</footer>
 </html>
